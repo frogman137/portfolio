@@ -1,0 +1,108 @@
+.koko img {
+    width: 100%;
+    height: auto;
+    min-width: 800px;
+
+}
+
+.foods {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.foodhead {
+    display: flex;
+    justify-content: center;
+}
+
+.foodhead>div {
+    cursor: pointer;
+    width: 25%;
+    height: 35px;
+    line-height: 35px;
+    border-collapse: collapse;
+}
+
+.foodbody>div {
+    display: none;
+}
+
+
+
+
+
+.active_head {
+    background-color: tomato;
+    color: #fff;
+}
+
+.see_body {
+    display: block !important;
+}
+
+.see_body>div {
+    margin-top: 50px;
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.see_body>div>div {
+    width: 20%;
+    margin: 0;
+}
+
+.see_body>h2 {
+    font-weight: 900;
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 0;
+    display: inline-block;
+    background: tomato;
+    padding: 10px 20px;
+    border-radius: 9px;
+    color: #fff;
+}
+
+.see_body>p {
+    text-align: left;
+    word-break: keep-all;
+    color: #b2b2b2;
+}
+
+.see_body img {
+    width: 100%;
+    border: 2px solid #d3d3d3;
+    box-sizing: border-box;
+    border-radius: 9px;
+
+}
+
+@media (max-width: 1000px) {
+    .foods {
+        width: 85%;
+    }
+
+    .see_body>div>div {
+        width: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+    .foods {
+        width: 95%;
+    }
+
+    .see_body>div>div {
+        width: 47%;
+    }
+
+    .foodhead {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .foodhead>div {
+        width: 50% !important;
+    }
+}
