@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'SpoqaHanSansNeo-Regular' !important;
+    font-weight: bolder;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 80px;
+    z-index: 9999;
+    border-bottom: 1px solid #b8b8b8;
+}
+
+.logo img {
+    max-height: 80px;
+    pointer-events: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-weight: 600;
+}
+
+nav ul li a {
+    height: 80px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid #cf0a2b00;
+    font-weight: 700 !important;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #cf0a2c;
+}
+
+.logo a:first-child:hover {
+    border-bottom: 2px solid #cf0a2b00 !important;
+}
+
+/*검색버튼*/
+.search_bar {
+    position: fixed;
+    width: 100%;
+    top: 81px;
+    background-color: #fff;
+    z-index: 99999;
+    padding: 20px 0px;
+    border-bottom: 2px solid #4e4e4e;
+    padding-bottom: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.magic {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fir_bar {
+    display: flex;
+    justify-content: center;
+}
+
+.search_bar * {
+    margin: 0;
+    font-size: 16px;
+}
+
+.search_bar>div>input {
+    width: 50%;
+    border: 1px solid #d3d3d3;
+    text-align: left;
+    border-right: 0;
+    padding: 5px;
+}
+
+.search_bar>div>input:focus {
+    outline: none;
+}
+
+.search_btn {
+    border: 1px solid #d3d3d3;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.new_list>h3 {
+    align-items: center;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #cf0a2c;
+}
+
+.new_list>ul {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.new_list li {
+    font-size: 18px;
+}
+
+.new_list b {
+    font-size: 20px;
+    font-weight: 900;
+    color: #cf0a2c;
+    letter-spacing: 5px;
+}
+
+/*검색버튼*/
+
+.footer {
+    background-color: #1c1c1c;
+}
+
+.footer>ul {
+    display: flex;
+    color: #fff;
+    padding: 20px 5%;
+    border-bottom: 1px solid #686868;
+}
+
+.footer>ul h4 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.footer>ul p {
+    text-align: center;
+}
+
+.bot_logo {
+    width: 200px;
+}
+
+.bot_logo img {
+    filter: contrast(0);
+    width: 200px;
+}
+
+.footer>div {
+    display: flex;
+    color: #fff;
+    font-size: 13px;
+    width: 70%;
+    padding-bottom: 30px;
+}
+
+.footer>p {
+    color: #fff;
+    padding: 20px 0px;
+    font-weight: 900;
+    font-size: 13px;
+}
+
+/*공통*/
+
+
+
+section {
+    width: 70%;
+    margin: 5% auto;
+}
+
+.btn {
+    background-color: #fff;
+    display: inline-block;
+    color: #000;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 7px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.btn_re {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #cf0a2c;
+    color: #fff;
+}
+
+.page_title {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 900 !important;
+}
+
+.page_title_s {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 900 !important;
+}
+
+
+.line {
+    width: 100px;
+    height: 2px;
+    background-color: #4e4e4e;
+    margin: 0 auto;
+}
+
+.mo_menu {
+    display: none;
+}
+
+@media all and (max-width: 1000px) {
+
+    /*메뉴*/
+    .nana {
+        display: none;
+    }
+
+    .mo_menu {
+        display: block;
+        border-bottom: 1px solid #717171
+    }
+
+    .mo_menu>a {
+        width: auto;
+        display: inline-block;
+    }
+
+    .mo_menu img {
+        width: 100%;
+        max-width: 100px;
+    }
+
+    .mo_menu_btn {
+        width: 45px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+
+    }
+
+    .mo_menu_btn>div {
+        width: 45px;
+        height: 2px;
+        background-color: #000;
+    }
+
+    .mo_menu_btn>div:nth-child(2) {
+        margin: 10px auto;
+    }
+
+    .mo_menu_wrap {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: none;
+
+    }
+
+    .mo_menu_box {
+        z-index: 999999;
+        height: 100vh;
+        position: fixed;
+        top: 0%;
+        text-align: center;
+        width: 80%;
+        margin-top: 68px;
+        background: #fff;
+        right: -100%;
+        transition: all .5s;
+    }
+
+    .mo_menu_list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mo_menu_list>a {
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        color: #000;
+        border-bottom: 1px solid #c8c8c8;
+    }
+
+    .mo_menu_util {
+        margin-top: 100px;
+    }
+
+    .mo_menu_util>a {
+        width: 50%;
+        display: inline-block;
+        background-color: #cf0a2c;
+        padding: 15px 5px;
+        margin: 3%;
+        color: #fff;
+        border-radius: 9px;
+    }
+
+    .search_bar {
+        top: 68px;
+    }
+
+    .change_btn>div {
+        width: 35px !important;
+    }
+
+    .change_btn>div:nth-child(2) {
+        margin: 0;
+        display: none;
+    }
+
+    .change_btn>div:first-child {
+        transform: rotate(45deg);
+    }
+
+    .change_btn>div:last-child {
+        transform: rotate(-45deg);
+    }
+
+    .see_mo_menu {
+        right: 0 !important;
+    }
+
+    .wraping {
+        background: rgba(37, 37, 37, 0.715) !important;
+        display: block;
+    }
+
+    .footer>div{width: 95%; flex-wrap: wrap;}
+
+
+    .footer>ul h4 {
+        text-align: center;
+        font-weight: 300;
+        font-size: 16px;
+    }
+    .footer>ul p{font-size: 16px;}
+    /*메뉴*/
+}
