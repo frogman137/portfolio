@@ -1,0 +1,145 @@
+/* #9a8866 */
+
+
+*{text-align: center;}
+body{overflow-x: hidden;}
+body>video{width: 100vw; height: 100vh; object-fit: cover; position: fixed; left: 0; top: 0; filter:brightness(.3); z-index: -1;}
+
+nav{background: rgb(0, 0, 0); color: #9a8866; font-weight: 900; width: 100%; padding: 0px 10%; box-sizing: border-box;
+     display: flex;  align-items: center; 
+     font-size: 18px; letter-spacing: 1px; box-shadow:1px 5px 10px #9a8866; position: fixed; top: 0; height: 90px; font-family: 'Chosunilbo_myungjo'; z-index: 2; transition: all .5s;}
+
+.mo_menu{display: none; width: 100%; position: fixed; height: 80px; background: black; border-bottom: 1px solid #9a8866; transition: all .5s; z-index: 3;}
+.mo_logo{height: inherit;}
+.mo_logo img{height: 100%;}
+.mo_bnt{position: absolute; right: 5%; top: 50%; transform: translateY(-50%); cursor: pointer;}
+.mo_bnt>div{width: 50px; background-color: #9a8866; height: 3px;}
+.mo_bnt>div:nth-child(2){margin: 15px auto;}
+.mo_list{ width: 100%;background: rgba(0, 0, 0, 0.808); height: auto;}
+.mo_list>div{height: 90px; line-height: 90px; text-align: center; font-size: 25px; border-bottom: 1px solid #fff; color:#9a8866;}
+.mo_util{display: flex; width: 100%; height: 60px; align-items: center; background: rgba(0, 0, 0, 0.808); color:#9a8866; box-sizing: border-box; box-shadow:1px 5px 10px #9a8866;}
+
+.mo_slide{ transform: translateX(200%); transition: all 1s;}
+.control_mo_menu{transform: translateX(0%);}
+.control_nav{box-shadow:0px 0px 0px #9a8866 !important; height: 70px !important; border-bottom:1px solid #9a8866 !important;}
+.menu{display: flex; justify-content: start; width: auto;}
+.menu>div{padding: 5px 10px; border-radius: 7px;}
+.logo>img{opacity:.8; transition: all .5s; height: 70px;}
+.logo>img:hover{opacity:1;}
+
+/*섹션1*/
+.sec1{height: 100vh; color: #fff; box-sizing: border-box; padding-top: 90px;}
+.text_box{width: 370px; margin-top: 150px;}
+.text_box>h2,.sub_text_box>div>h2{color: #ffffff; text-shadow: 1px 1px 20px #9a8866,-1px -1px 20px #9a8866; margin-bottom: 10px;}
+.text_box>p,.sub_text_box>div>p{color: #b9b9b9; font-size: 16px;}
+.sub_text_box{display: flex; margin-top: 15%;}
+.sub_text_box>div{width: 370px;}
+/*섹션1*/
+
+/*섹션2*/
+.sec2{background-color: #000000bd; padding: 3% 0%; color: #fff; filter: blur(.1);}
+.sec2>img{max-width: 350px; width: 100%;}
+.sec2>p{font-weight: 100; font-size: 16px; margin-bottom: 3%;}
+.player_camp{display: flex; width: 60%; flex-wrap: wrap;}
+.player_camp>div{display: flex; width: 100%; margin-bottom: 5%;}
+.player_title{margin-top: 5%; margin-bottom: 20px; font-size: 35px; font-weight: 300;}
+.camp_img{width: auto;}
+.camp_text{width: 70%; padding-left: 20px;}
+.camp_text>h4, .camp_text>p{text-align: left;}
+.camp_text>h4{font-size: 23px; color: #9a8866; margin-bottom: 40px; font-weight: 300;}
+.camp_text>p{line-height: 2; letter-spacing: 0; font-weight: 100;}
+/*섹션2*/
+
+/*슬라이드*/
+.slidebox{max-width: 880px;}
+.slide-container {
+    width: 2800px;
+    transition: all 1s;
+  }
+  .slide-box {
+    width: 400px;
+    float: left;
+  }
+  .slide-box img {
+    width: 400px;
+  } 
+
+.slide-container {
+  width: 2800px;
+  
+  transform: translateX(0px);
+} 
+.slide_img{transition: all .5s;}
+.slide_txt{transition: all 1.5s;}
+.slidebox{display: flex;}
+.slidebox>div{margin: 0px 20px;}
+.slidebox .lightfont{font-size: 25px; margin-bottom: 20px; font-weight: 100; padding: 5px;}
+.slidebox p{line-height: 1.5; color: #b9b9b9;}
+.slide_bnt{margin-top: 50px;}
+.slide_bnt>div{display: inline-block; border: 1px solid #9a8866; padding: 5px 15px; cursor: pointer;}
+.slide_bnt>div:hover{background: #9a8866; color: #fff;}
+/*슬라이드*/
+
+
+/*섹션3*/
+.sec3{margin-top: 20%; background: #181818; color: #ffffff; padding: 5% 0%; }
+.sec3>h3{font-size: 30px; margin-bottom: 10px;}
+.sec3>div>p{font-weight: 100; color: #4e4e4e; margin-bottom: 80px;}
+
+.systems img{width:100%; max-width: 450px;}
+.systems{display: flex; width: 60%; margin-bottom: 5%;}
+.systems>div{width: 50%;}
+.systems h3,.systems p{text-align: left;}
+.systems h3{font-size: 22px; margin-bottom: 20px;}
+.systems p{line-height: 2;}
+.systems:last-child{margin-bottom: 0;}
+/*섹션3*/
+
+/*섹션4*/
+.sec4{background: url(../img/preorder_bg.jpg)center center no-repeat fixed; color: #fff; height: 100vh;}
+.order_logo{padding-top: 5%;}
+.order_logo img{max-width: 400px; width: 100%;}
+.order_ment{font-size: 24px; color: #f5f7f6 !important; font-weight: 600;}
+.products{display: flex; justify-content: space-around; width: 70%; margin-top:3%; flex-wrap: wrap;}
+.products>div{position: relative; box-shadow: 1px 0px 20px #9a8866;}
+.products p{background-color: rgb(24, 24, 24); box-sizing:border-box; padding:5px 20px; 
+  font-size: 20px; position: absolute; bottom: -1%; width: 100%; margin-bottom: 5px;}
+/*섹션4*/
+
+/*섹션5*/
+.sec5{height: 100%; width: 100%; background: #000000bd; box-sizing: border-box; padding: 5%;}
+.sec5>iframe{margin-top: 20px;}
+.sec5>h2{padding-top: 1%;}
+.bnt{border: 1px solid #9a8866; display:block; padding: 8px 13px; width: 100px; color: #fff; font-size: 18px;  margin-top: 40px; transition: all .3s;}
+.bnt:hover{background: #9a8866; color:#fff;}
+/*섹션5*/
+
+footer{width: 100%; color: #9a8866; background: black; padding-top: 30px; font-weight: 200; padding-bottom: 10px;
+  box-shadow:1px 5px 20px #9a8866;
+}
+/* footer a {width: 200px;} */
+footer img{width: 200px;} 
+
+
+@media (max-width: 1000px) {
+  nav{display: none;}
+  .mo_menu{display: block;}
+  .sub_text_box{flex-wrap: wrap; width: 90%;}
+  .sub_text_box>div{margin-bottom: 15%;}
+  .player_camp{width: 90%;}
+  .player_camp>div{display: block; margin-bottom: 10%;}
+  .camp_text{width: 90%;}
+  .camp_text>h4{text-align: center;}
+
+  .sec2 img{max-width: 90%;}
+  .sec2>img{max-width: 350px;}
+  .slidebox{display: block; overflow: hidden; width: 100%; margin: 0 auto;}
+  .slide-box{width: 375px;}
+  .systems{flex-wrap: wrap; width:90%; margin-bottom:10%;}
+  .systems>div{width: 90%;}
+  .systems h3{text-align: center;}
+
+  .sec4{height: auto; padding-bottom: 5%;}
+  .products{gap: calc(1% + 30px) 0%;}
+  .sec5>iframe{height: 500px; width: 100%;}
+}

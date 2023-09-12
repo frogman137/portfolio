@@ -1,0 +1,127 @@
+body {
+    background: #181818;
+}
+
+.wrap {
+    background: url(../img/patt.png)repeat;
+    margin-top: 90px;
+}
+
+.front>img {
+    display: flex;
+    margin-top: 150px;
+    max-width: 300px;
+}
+.front{text-align: center; color: #fff;}
+
+.sec1 {
+    background: url(../img/sec1.jpg)center center no-repeat;
+    height: 500px;
+    margin-top: 90px;
+}
+
+.sec2 {
+    background: url(../img/sec2.jpg)center center no-repeat;
+    height: 500px;
+}
+
+.sec3 {
+    background: url(../img/sec3.jpg)center center no-repeat;
+    height: 500px;
+}
+
+.concon {
+    display: flex !important;
+    align-items: center;
+    color: #fff;
+    flex-wrap: wrap;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.concon>div {
+    width: 40%;
+    text-align: right !important;
+}
+
+.concon h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.concon p {
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.lightfont {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.lightfont b {
+    font-size: 40px;
+}
+
+
+
+.shop {
+    background: url(../img/kep.jpg);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+
+.shop>img {
+    display: flex;
+    max-width: 400px;
+}
+
+.shop>ul {
+    margin-top: 3%;
+}
+
+.shop ul li {
+    width: 100%;
+    max-width: 450px;
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 30px auto;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.steam,
+.play {
+    background: #22316c7c;
+    border: 3px solid #22316c;
+}
+
+.epic {
+    background: #4d4d4d79;
+    border: 3px solid #4d4d4d;
+}
+
+.nintendo {
+    background: #ad090975;
+    border: 3px solid #ad0909;
+}
+
+.xbox {
+    background: #06770687;
+    border: 3px solid #067706;
+}
+
+.shop ul li:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+    .concon>div{width: 95%;}
+    .concon_hide{display: none;}
+    .shop>img{width: 100%;}
+    .shop ul li{width: 90%;}
+  }

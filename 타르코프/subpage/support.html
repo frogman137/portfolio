@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SUPPORT</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="../css/nav.css" rel="stylesheet" type="text/css" />
+    <link href="../css/support.css" rel="stylesheet" type="text/css" />
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="wrap">
+        <div class="box_1">
+            <h3 class="lightfont">Tarkov Support</h3>
+            <p>Need help with anything Tarkov?</p>
+        </div>
+
+        <div class="q_box">
+            <div class="Qis">Q. Tarkov is crashing, or won't launch!</div>
+            <div class="Ais">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.
+            </div>
+            <div class="Qis">Q. Tarkov is crashing, or won't launch!</div>
+            <div class="Ais">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.
+            </div>
+            <div class="Qis">Q. Tarkov is crashing, or won't launch!</div>
+            <div class="Ais">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.
+            </div>
+            <div class="Qis">Q. Tarkov is crashing, or won't launch!</div>
+            <div class="Ais">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.
+            </div>
+            <div class="Qis">Q. Tarkov is crashing, or won't launch!</div>
+            <div class="Ais">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.
+            </div>
+            <div class="Qis">Q. Tarkov is crashing, or won't launch!</div>
+            <div class="Ais">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.
+            </div>
+            <div class="Qis">Q. Tarkov is crashing, or won't launch!</div>
+            <div class="Ais">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.
+            </div>
+        </div>
+
+        <div class="send_box">
+            <h2 class="lightfont">SEND MESSAGE</h2>
+            <div>
+                <h4>이름</h4>
+                <input type="text" placeholder="name" class="name"/>
+            </div>
+            <div>
+                <h4>E-mail</h4>
+                <input type="text" placeholder="E-mail" class="mail"/>
+            </div>
+            <div>
+                <h4>문의내용</h4>
+                <input type="text" class="last"/>
+            </div>
+
+            <button>send</button>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+<script src="../js/headerfooter.js"></script>
+<script src="../js/js.js"></script>
+<script>
+    window.addEventListener('load', () => {
+        const moMenu = document.querySelector('.mo_bnt');
+        const moSlide = document.querySelector('.mo_slide');
+        const homehead = document.querySelectorAll('.Qis');
+        const homebody = document.querySelectorAll('.Ais');
+        const nameTag = document.querySelector('.name');
+        const mailTag = document.querySelector('.mail');
+        const lastTag = document.querySelector('.last');
+        const sendBtn = document.querySelector('.send_box>button');
+        moMenu.addEventListener('click', () => {
+            moSlide.classList.toggle('control_mo_menu');
+        });
+
+        for (let i = 0; i < homehead.length; i++) {
+            homehead[i].addEventListener('click', () => {
+                $('.Qis').removeClass('seeQ');
+                $('.Ais').removeClass('seeA');
+                homehead[i].classList.add('seeQ');
+                homebody[i].classList.add('seeA');
+            });
+        }
+
+        sendBtn.addEventListener('click',()=>{
+            if(nameTag.value == ""){
+                alert('이름을 입력해주세요');
+            }else if(mailTag.value == ""){
+                alert('메일을 입력해주세요');
+            }else if(lastTag.value == ""){
+                alert('내용을 입력해주세요');
+            }else{
+                alert('내용전송완료');
+                nameTag.value ="";
+                mailTag.value ="";
+                lastTag.value ="";
+            }
+        });
+    });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/login.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

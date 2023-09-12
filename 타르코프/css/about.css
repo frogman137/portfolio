@@ -1,0 +1,102 @@
+body {
+  height: 100%;
+  background: #181818;
+}
+.wrap{  background: url(../img/patt.png);}
+.about>h3 {
+  margin-top: 180px;
+}
+
+.about>h3,
+.platform>h3 {
+  text-align: center;
+  color: #fff;
+  padding-top: 50px;
+  font-size: 40px;
+}
+
+.about>p {
+  width: 80%;
+  font-size: 17px;
+  color: #bbbbbb;
+  line-height: 2;
+  padding: 5% 0%;
+  word-break: keep-all
+}
+
+.flow_wrap {
+  overflow-x: scroll;
+  width: 80%;
+  height: auto;
+}
+
+.flow_wrap::-webkit-scrollbar {
+  width: 10px;
+}
+
+.flow_wrap::-webkit-scrollbar-thumb {
+  background-color: #2f3542;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+.flow_wrap::-webkit-scrollbar-track {
+  background-color: grey;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+
+.platform {
+  padding: 5% 0%;
+}
+
+.akaplat {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 25px auto;
+}
+
+.platform>div {
+  display: flex;
+  color: #bbbbbb;
+  text-align: center;
+  font-size: 18px;
+  width: 80%;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.platform img {
+  opacity: .3;
+  transition: all .5s;
+}
+
+.platform>div>div:hover img {
+  opacity: 1;
+}
+
+.platform button {
+  border: 0;
+  background: #9a8866;
+  color: #fff;
+  padding: 10px 15px;
+  display: flex;
+  margin-top: 100px;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.platform button:hover {
+  background: #fff;
+  color: #9a8866;
+}
+
+@media (max-width: 1000px) {
+  .platform>div {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+  }
+  .platform>div>div{width: 45%;}
+}
