@@ -1,0 +1,455 @@
+body {
+    background-color: #f6f6f6;
+}
+
+a {
+    color: #191919;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #383838;
+}
+
+img {
+    display: block;
+}
+
+.sec1>img {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sec2,
+.sec3 {
+    width: 65%;
+    margin: auto;
+}
+
+.wantbook {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.wantbook>h2 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.wantbook>span {
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    word-break: keep-all;
+}
+
+.seasea {
+    text-align: center;
+    display: flex;
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+.seasea input {
+    border: 1px solid #b0b0b0;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+
+.seasea input:focus {
+    outline: none;
+}
+
+.seasea button {
+    border: 1px solid #b0b0b0;
+    width: 10%;
+}
+
+.kaka {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 2.5%;
+}
+
+.kaka>li {
+    width: 18%;
+}
+.btnbtn{display: none;}
+.kamang {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/*책상자*/
+.cover_img {
+    width: 100%;
+    height: auto;
+}
+
+.price {
+    margin-top: 10px;
+    font-size: 15px;
+    text-decoration: line-through;
+    color: #b0b0b0;
+}
+
+.price1 {
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #b93a3a;
+}
+
+.content {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.title {
+    font-size: 18px;
+    margin-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.daum {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    background: #fff;
+    border-radius: 9px;
+    padding: 5px 0px;
+    color: aliceblue;
+    width: 50%;
+    border: 1px solid rgb(230, 230, 230);
+    color: #383838;
+    font-size: 15px;
+}
+
+.daum:hover {
+    background-color: rgb(215, 133, 66);
+    border: 1px solid rgb(215, 133, 66);
+    color: #fff;
+}
+
+/*책상자*/
+
+.line {
+    margin: 50px auto;
+    background: #383838;
+    width: 80px;
+    height: 2px;
+}
+
+.sellbook {
+    display: flex;
+    border: 1px solid #b0b0b0;
+    flex-wrap: wrap;
+}
+
+.sellbook>div {
+    width: 50%;
+}
+
+.left img {
+    width: 100%;
+}
+
+.right {
+    text-align: center;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.up_img {
+    margin-top: 10px;
+}
+
+#image_container {
+    overflow: hidden;
+    display: flex;
+    gap: 2.5%;
+}
+
+#image_container img {
+    width: 45%;
+    max-height: 200px;
+    object-fit: cover;
+    display: none;
+}
+
+#image_container img:nth-child(1),
+#image_container img:nth-child(2) {
+    display: block;
+}
+
+.reset_img {
+    background: rgb(215, 133, 66);
+    border-radius: 9px;
+    padding: 5px 10px;
+    color: aliceblue;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+.up_product>form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.up_product>form>input {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    margin: 10px;
+}
+
+.send {
+    text-align: center;
+    margin: 0 auto;
+    background: rgb(215, 133, 66);
+    border-radius: 9px;
+    padding: 5px 10px;
+    color: aliceblue;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px auto;
+    border: 0;
+}
+
+/*베스트셀러*/
+.best>h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.best>div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.best img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.best>div>div {
+    position: relative;
+    overflow: hidden;
+}
+
+.best>div>div>p {
+    position: absolute;
+    transition: all .5s;
+}
+
+.book1>p {
+    width: 100%;
+    background: #de8c8c;
+    top: -120%;
+    word-break: keep-all;
+    padding: 10px;
+    color: #782e2e;
+    padding-top: 200%;
+    padding-bottom: 10%;
+}
+
+.book1>p>b {
+    font-size: 22px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.book1>p>span {
+    display: none;
+}
+
+.book1:hover p {
+    top: -45%;
+    background: #de8c8c71;
+    color: #fff;
+}
+
+.book2>p {
+    width: 100%;
+    bottom: -310px;
+    color: #fff;
+    padding: 10px;
+    background: #ddbf00;
+    color: #5a2100;
+    transition: all .5s;
+    height: 400px;
+    box-sizing: border-box;
+  
+}
+
+.book2>p>b {
+    font-size: 22px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.book2:hover p {
+    background: #ddbf0081;
+    bottom: 0px;
+    color: #fff;
+}
+
+/*베스트셀러*/
+
+/*푸터*/
+footer {
+    border-top: 1px solid #b0b0b0;
+    margin-top: 100px;
+    padding: 10px 17.5%;
+}
+
+footer>ul {
+    display: flex;
+    gap: 0px 15px;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+footer>ul>li {
+    color: #383838;
+    cursor: pointer;
+}
+
+address ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 30px;
+    justify-content: center;
+}
+
+footer>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+footer>div>img {
+    width: 100%;
+}
+
+footer>div>p {
+    width: 100%;
+    text-align: center;
+}
+
+.stst{position: sticky; top: 0; width: 100%; z-index: 20; background: #fff; border-bottom: 1px solid #b0b0b0;}
+.stst>div>h2{margin-top: 10px;}
+.book_box{margin-top: 50px;}
+/*푸터*/
+
+@media screen and (max-width:1023px) {
+    .wantbook{margin: 15px auto;}
+    footer {
+        padding: 10px 7.5%;
+    }
+
+    .sec2,
+    .sec3 {
+        width: 85%;
+        margin: auto;
+    }
+
+    .kaka {
+        gap: 0.5%;
+    }
+
+    .kaka>li {
+        width: 33%;
+    }
+
+    .best>div>div {
+        width: 50%;
+    }
+
+    .book1>p {
+        width: 100%;
+        background: #de8c8c;
+        bottom: 0;
+        word-break: keep-all;
+        padding: 10px;
+        color: #782e2e;
+        padding-top: 0;
+        padding-bottom: 10%;
+    }
+
+    .sellbook>div {
+        width: 100%;
+    }
+
+    .submenu{display: none;}
+    nav{display: flex; justify-content: center;}
+    .btnbtn{display: block; position: absolute; right: 5%;}
+    .btnbtn>div{width: 40px; height: 2px; background: #191919;}
+    .btnbtn>div:nth-child(2){margin: 10px auto;}
+    .seasea{margin-bottom: 20px;}
+}
+
+@media screen and (max-width:599px) {
+
+    footer {
+        padding: 10px 2.5%;
+        margin: 0 auto;
+    }
+    footer>ul{flex-wrap: wrap;}
+    footer>ul>li{width: 30%; font-size: 14px; text-align: center; margin: 5px auto;}
+    .sec2,
+    .sec3 {
+        width: 95%;
+        margin: auto;
+    }
+
+    .kaka {
+        gap: 0%;
+    }
+
+    .kaka>li {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .best>div>div {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .book1>p {
+        width: 100%;
+        background: #de8c8c;
+        bottom: 0;
+        word-break: keep-all;
+        padding: 10px;
+        color: #782e2e;
+        padding-top: 0;
+        padding-bottom: 10%;
+    }
+
+    .sellbook>div {
+        width: 100%;
+    }
+    .wantbook span{font-size: 14px;}
+}

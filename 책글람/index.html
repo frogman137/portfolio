@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>카페 & 서점</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/nav.css" rel="stylesheet" type="text/css" />
+</head>
+<script src="./js/server.js"></script>
+<script src="./js/book.js"></script>
+
+<body>
+    <nav>
+        <a href="#"><img src="./images/logo.png" alt="logo" /></a>
+        <ul class="submenu">
+            <li><a href="#">베스트셀러</a></li>
+            <li><a href="#">신간서적</a></li>
+            <li><a href="#">중고서적</a></li>
+            <li><a href="#">e-Book</a></li>
+            <li><a href="#">카페</a></li>
+        </ul>
+        <div class="btnbtn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <section class="sec1">
+        <img src="./images/front.jpg" alt="front_img" />
+    </section>
+
+    <section class="best">
+        <h2>베스트셀러 TOP4</h2>
+        <div>
+            <div class="book2">
+                <img src="./images/book1.jpg" alt="#" />
+                <p>
+                    개미 3부작으로 유명한<br><b>베르나르 베르베르</b>의 소설<br>
+                    신 시리즈
+                </p>
+            </div>
+            <div class="book2">
+                <img src="./images/book2.jpg" alt="#" />
+                <p>세계 최초의 핵무기 개발 계획인<br><b>맨해튼 프로젝트</b>에서 주도적인<br> 역할을 담당한 </p>
+            </div>
+            <div class="book2">
+                <img src="./images/book3.jpg" alt="#" />
+                <p>세상을 바꾸는 새로운 AI <br><b>chat GPT</b><br>2023년 개정판</p>
+            </div>
+            <div class="book2">
+                <img src="./images/book4.jpg" alt="#" />
+                <p>베스트셀러 top5안에 드는 작품<br><b>해리포터 시리즈</b><br>대망의 첫번째</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="sec2">
+        <div class="stst">
+        <div class="wantbook">
+            <h2>찾으시는 책이 있습니까?</h2>
+            <span>#<b class="hash">요리</b></span>
+            <span>#<b class="hash">카페</b></span>
+            <span>#<b class="hash">한국</b></span>
+            <span>#<b class="hash">EBS</b></span>
+            <span>#<b class="hash">강의</b></span>
+            <span>#<b class="hash">강아지</b></span>
+            <span>#<b class="hash">고양이</b></span>
+            <span>#<b class="hash">반려동물</b></span>
+        </div>
+        <form class="seasea">
+            <input type="text" id="query" placeholder="책 이름을 입력해주세요">
+            <button id="search">검색</button>
+        </form>
+        </div>
+        <div class="book_box">
+            <ul class="kaka">
+
+            </ul>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="sec3">
+        <div class="wantbook">
+            <h2>중고장터</h2>
+            <p>쌓여가는 책을 빠르게 판매할 수 있는 서비스 입니다.</p>
+        </div>
+        <div class="sellbook">
+            <div class="left">
+                <img src="./images/fle.jpg" alt="fle" />
+            </div>
+            <div class="right">
+                <h2>쌓여가는 책을 빠르게 판매할 수 있는 서비스 입니다.</h2>
+                <div class="up_img"><input type="file" id="image" accept="image/*" onchange="setThumbnail(event);" />이미지
+                    업로드(2개)</div>
+                <div id="image_container"></div>
+                <div class="reset_img">이미지 초기화</div>
+                <div class="up_product">
+                    <form class="private">
+                        <input type="text" placeholder="이름을 입력해주세요" class="val1" />
+                        <input type="text" placeholder="번호를 입력해주세요" class="val2" />
+                        <input type="text" placeholder="주소를 입력해주세요" class="val3" />
+                        <button class="send">물건등록하기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <ul>
+            <li>서점소개</li>
+            <li>개인정보처리방침</li>
+            <li>이용약관</li>
+            <li>라이센스 규정</li>
+            <li>FAQ</li>
+            <li>사업제휴</li>
+        </ul>
+        <address>
+            <ul>
+                <li>카페&서점</li>
+                <li>사업자등록번호 111-11-11111</li>
+                <li>통신판매신고 제 2023-서울-1234</li>
+                <li>서울특별시 OO로 3-6 빌</li>
+                <li>개인정보보호책임자</li>
+                <li>대표번호 123-456-6789</li>
+                <li>EMAIL pama753@naver.com</li>
+                <li>FAX 123-456-6789</li>
+            </ul>
+        </address>
+        <div>
+            <img src="./images/logo.png" alt="logo" style="max-width: 200px;"/>
+            <p>Copytight 2023 All pictures cannot be copued without permisson</p>
+        </div>
+    </footer>
+</body>
+
+</html>
