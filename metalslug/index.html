@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <title>Metal Slug</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <link href="./css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".slider").bxSlider();
+    });
+  </script>
+</head>
+
+<body>
+  <div class="dot_box">
+    <img src="./gif/moden1.gif" alt="gif">
+  </div>
+  <div class="dot_box1">
+    <img src="./gif/he.gif" alt="gif">
+  </div>
+  <div class="dot_box3">
+    <img src="./gif/mo.gif" alt="gif">
+  </div>
+  <div class="dot_box4">
+    <img src="./gif/mo1.gif" alt="gif">
+  </div>
+  <div class="wrap">
+    <header>
+      <nav>
+        <a href="#" class="logo"><img src="./img/logo01.svg" alt="#"></a>
+        <ul class="menu">
+          <li><a href="./subpage/company.html">SNK 소개</a></li>
+          <li><a href="./subpage/games.html">SNK 게임</a></li>
+          <li><a href="./subpage/app.html">고객센터</a></li>
+        </ul>
+        <div class="sns">
+          <a href="#"><i class="ri-youtube-line"></i></a>
+          <a href="#"><i class="ri-twitter-line"></i></a>
+          <a href="#"><i class="ri-facebook-box-fill"></i></a>
+        </div>
+      </nav>
+
+
+      <div class="slider">
+        <div><img src="./img/slider1.png" alt="slider1"></div>
+        <div><img src="./img/slider2.png" alt="slider2"></div>
+        <div><img src="./img/slider3.png" alt="slider3"></div>
+      </div>
+    </header>
+
+
+    <section class="sec1">
+      <h2 class="kiki">SNK의 명작 횡스크롤 액션 런앤건 게임</h2>
+      <p>1996년부터 지금까지 1위를 차지한 SNK의 Metal Slug시리즈</p>
+      <div class="video_box">
+        <div>
+          <video type="video/mp4" src="./img/1 (1).mp4" loop muted class="videoman"></video>
+          <div class="text_box">
+            <h4>Run & Gun</h4>
+            <p>횡스크롤 액션게임의 명가 다운 수려한 도트 그래픽</p>
+            <p class="video_btn">더 보기</p>
+          </div>
+        </div>
+        <div>
+          <video type="video/mp4" src="./img/2 (1).mp4" loop muted class="videoman"></video>
+          <div class="text_box">
+            <h4>A Lot of Slugs</h4>
+            <p>메탈슬러그에서는 여러가지 탈것을 지원하며 눈을 즐겁게 합니다.</p>
+            <p class="video_btn">더 보기</p>
+          </div>
+        </div>
+        <div>
+          <video type="video/mp4" src="./img/3 (1).mp4" loop muted class="videoman"></video>
+          <div class="text_box">
+            <h4>STORY</h4>
+            <p>단순 킬링타임용 게임이 아닌 탄탄한 스토리를 제공합니다.</p>
+            <p class="video_btn">더 보기</p>
+          </div>
+        </div>
+        <div>
+          <video type="video/mp4" src="./img/4 (1).mp4" loop muted class="videoman"></video>
+          <div class="text_box">
+            <h4>Enemy</h4>
+            <p>다양한 기믹을 가진 몬스터가 있어서 플레이를 다채롭게 합니다.</p>
+            <p class="video_btn">더 보기</p>
+          </div>
+        </div>
+      </div>
+      <script>
+        window.addEventListener('load', () => {
+          const videoList = document.querySelectorAll('.video_btn');
+          const videoText = document.querySelectorAll('.text_box');
+          const video = document.querySelectorAll('.videoman');
+
+          for (let i = 0; i < videoList.length; i++) {
+            videoList[i].addEventListener('mouseenter', () => {
+              video[i].play();
+              videoText[i].classList.add('active');
+
+            });
+            videoList[i].addEventListener('mouseleave', () => {
+              video[i].pause();
+              videoText[i].classList.remove('active');
+            });
+          }
+        });
+      </script>
+    </section>
+
+    <section class="sec2">
+
+      <h3 class="kiki">Weapons</h3>
+      <p>Metal Slug 시리즈의 주요한 특징은 치명적인 무기를 제공하는 것입니다.</p>
+      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide nam_slide">
+            <div class="slide_text">
+              <h3>헤비머신건</h3>
+              <p>기본 장탄 수 : 200발</p>
+              <p>데미지 : 1dmg</p>
+              <p>발사 속도가 매우 빠른 무기로, 권총보다 총알이 약간 더 강력합니다.</p>
+            </div>
+            <div><img src="./img/weapons/Heavy1.webp" alt="#" /></div>
+          </div>
+
+
+          <div class="swiper-slide nam_slide">
+            <div class="slide_text">
+              <h3>투 머신건</h3>
+              <p>기본 장탄 수 : 200발</p>
+              <p>데미지 : 2dmg</p>
+              <p>HMG의 단일 스트림과 달리 두 스트림의 기관총 총알을 발사하는 무기입니다. 이 독특한 무기는 AR-10 대신 두 개의 SMG에서 발사됩니다 .</p>
+            </div>
+            <div><img src="./img/weapons/2H.webp" alt="#" /></div>
+          </div>
+
+
+          <div class="swiper-slide nam_slide">
+            <div class="slide_text">
+              <h3>샷건</h3>
+              <p>기본 장탄 수 : 30발</p>
+              <p>데미지 : 20dmg</p>
+              <p>단거리이지만 엄청나게 강력한 폭발을 발사하는 무기입니다. 이 무기는 적군을 제거하는 데 매우 효과적이지만, 단거리에서는 위험하기도 합니다. </p>
+            </div>
+            <div><img src="./img/weapons/S1.webp" alt="#" /></div>
+          </div>
+
+
+          <div class="swiper-slide nam_slide">
+            <div class="slide_text">
+              <h3>슈퍼 그레네이드</h3>
+              <p>기본 장탄 수 : 20발</p>
+              <p>데미지 : 20dmg</p>
+              <p>로켓이 아닌 대형 RPG를 발사하는 로켓 발사기의 변형으로 보병과 경장갑 차량에 매우 효과적입니다. </p>
+            </div>
+            <div><img src="./img/weapons/g1.webp" alt="#" /></div>
+          </div>
+
+
+          <div class="swiper-slide nam_slide">
+            <div class="slide_text">
+              <h3>레이저</h3>
+              <p>기본 장탄 수 : 20발</p>
+              <p>데미지 : 20dmg</p>
+              <p>일렬로 늘어선 보병 집단을 베어버릴 수 있고, 대형 차량도 효과적으로 파괴할 수 있는 레이저를 발사하는 무기입니다. </p>
+            </div>
+            <div><img src="./img/weapons/l1.webp" alt="#" /></div>
+          </div>
+
+          <div class="swiper-slide nam_slide">
+            <div class="slide_text">
+              <h3>아이언 리자드</h3>
+              <p>기본 장탄 수 : 40발</p>
+              <p>데미지 : 10dmg</p>
+              <p>지상을 따라 이동하며 표적에 닿을 때까지 원격 조종되는 미사일 차량을 발사하는 무기입니다. </p>
+            </div>
+            <div><img src="./img/weapons/i1.webp" alt="#" /></div>
+          </div>
+
+          <div class="swiper-slide nam_slide">
+            <div class="slide_text">
+              <h3>잔테츠 소드</h3>
+              <p>기본 장탄 수 : 20발</p>
+              <p>데미지 : 30dmg</p>
+              <p>이 검은 휘두를 때마다 에너지의 파동을 발사합니다. </p>
+            </div>
+            <div><img src="./img/weapons/z1.webp" alt="#" /></div>
+          </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div thumbsSlider="" class="swiper mySwiper kokomi">
+        <div class="swiper-wrapper btn_slide">
+          <div class="swiper-slide">
+            <img src="./img/weapons/Heavy.webp" alt="#" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/weapons/2h2.webp" alt="#" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/weapons/s.webp" alt="#" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/weapons/g.webp" alt="#" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/weapons/l.webp" alt="#" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/weapons/i.webp" alt="#" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/weapons/z.webp" alt="#" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec3">
+      <p><b>3500만</b> 다운로드를 기록한 <span class="koko">SNK playmore</span>의 명작 <br><b>메탈슬러그 디펜스</b></p>
+      <div class="but_btn">
+        <a href="#" class="app_down">Android 다운</a><a href="#" class="app_down">AppStore 다운</a>
+      </div>
+      <img src="./gif/moden2.gif" alt="#" class="dot1">
+      <img src="./gif/tama1.gif" alt="#" class="dot2">
+    </section>
+
+
+    <script>
+      const banner = document.querySelectorAll('.koko');
+
+      const chk = function(ent, observer){
+        const [{isIntersecting, target}] = ent
+
+        if(isIntersecting){
+          target.classList.add('visi');
+        }else{
+          target.classList.remove('visi');
+        }
+      }
+
+      const obbo = new IntersectionObserver(chk,{
+        root:null,
+        threshold: 0.7,
+      });
+      banner.forEach((e)=>{
+        obbo.observe(e);
+      })
+    </script>
+
+
+    <section class="sec4">
+
+      <h3>Metal Slug Series</h3>
+      <p>24년 경력의 SNK의 횡스크롤 액션 게임 시리즈</p>
+
+
+
+      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/fran1.webp" alt="#">
+            <div class="se_text">
+              <h3>메탈슬러그 1</h3>
+              <p>출시 : 1996.04.19</p>
+              <p>개발 : 나스카, SNK</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./img/fran2.webp" alt="#">
+            <div class="se_text">
+              <h3>메탈슬러그 2</h3>
+              <p>출시 : 1998.02.23</p>
+              <p>개발 : SNK,햄스터</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./img/fran3.webp" alt="#">
+            <div class="se_text">
+              <h3>메탈슬러그 3</h3>
+              <p>출시 : 2000.05.25</p>
+              <p>개발 : SNK,햄스터</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./img/fran4.jpg" alt="#">
+            <div class="se_text">
+              <h3>메탈슬러그 4</h3>
+              <p>출시 : 2002.03.27</p>
+              <p>개발 : 메가 엔터프라이즈</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./img/fran5.jpg" alt="#">
+            <div class="se_text">
+              <h3>메탈슬러그 5</h3>
+              <p>출시 : 2003.11.13</p>
+              <p>개발 : SNK Playmore</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./img/fran6.jpg" alt="#">
+            <div class="se_text">
+              <h3>메탈슬러그 6</h3>
+              <p>출시 : 2006.02.22</p>
+              <p>개발 : SNK Playmore</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./img/franXX.webp" alt="#">
+            <div class="se_text">
+              <h3>메탈슬러그 XX</h3>
+              <p>출시 : 2009.12.23</p>
+              <p>개발 : SNK Playmore</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/frand.jpg" alt="#">
+            <div class="se_text">
+              <h3>메탈슬러그 디펜스</h3>
+              <p>출시 : 2014.05.15</p>
+              <p>개발 : SNK Playmore</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/frana.webp" alt="#">
+            <div class="se_text">
+              <h3>메탈슬러그 어택</h3>
+              <p>출시 : 2016.02.14</p>
+              <p>개발 : SNK Playmore</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      
+    </section>
+
+    <footer>
+      <ul>
+        <li>기업정보</li>
+        <li>게임정보</li>
+        <li>라이선스 사업</li>
+        <li>사이트맵</li>
+        <li>이용약관</li>
+      </ul>
+      <img src="./img/logo01.svg" alt="footLogo">
+      <p>© SNK CORPORATION ALL RIGHTS RESERVED.</p>
+    </footer>
+  </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./js/js.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper3 = new Swiper(".mySwiper3", {
+    loop: true,
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+    autoplay: {
+      delay:4000,
+    },
+    breakpoints: {
+        
+        768: {
+          slidesPerView: 2,  //브라우저가 768보다 클 때
+          spaceBetween: 40,
+        },
+        999: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 10,
+        },
+        1200: {
+          slidesPerView: 4,  //브라우저가 1024보다 클 때
+          spaceBetween: 10,
+        },
+      },
+  });
+  var swiper2 = new Swiper(".mySwiper2", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+</script>
+
+</html>

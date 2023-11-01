@@ -1,0 +1,129 @@
+.wrap {
+    width: 75%;
+    margin: auto;
+    background: url(../img/bg1.jpg)center center repeat;
+    position: relative;
+}
+
+section {
+    width: 90%;
+    margin: 50px auto;
+}
+
+
+.koko {
+    margin-bottom: 20px;
+    border-left: 4px solid #3fa8f4;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.koko>h2 {
+    text-align: left;
+    font-size: 25px;
+}
+
+.koko>p {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 100 !important;
+}
+
+.game_box {
+    display: flex;
+    gap: 1%;
+    flex-wrap: wrap;
+}
+
+.game_box>div {
+    position: relative;
+    overflow: hidden;
+    width: 24%;
+}
+.game_box>div img{height: 100%;}
+.game_text {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 100% 0%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.664);
+}
+.line{width: 50%; height: 1px; background: #fff; margin: 10px auto;}
+.game_text>div{visibility: hidden; display: none; cursor: pointer;}
+.game_text:hover div{visibility: visible; display: block;}
+.play{position: absolute; z-index: 3; bottom: 5%; left: 5%; font-size: 30px; opacity: .5;}
+
+
+/*sec3*/
+.sec3 {
+    background: url(../img/cnme.jpg)center center no-repeat;
+    background-size: auto;
+    position: relative;
+    height: auto;
+    padding: 50px 0px;
+    background-size: cover;
+    filter: brightness(.8);
+}
+
+.sec3>p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 900;
+    text-shadow: 5px 3px 5px #000000;
+}
+.koko{    
+    opacity: 0;
+    transition: all 2s;}
+.visi{opacity: 1;}
+.sec3>p>b {
+    font-size: 25px;
+    color: tomato;
+    transition: all 1s;
+    
+}
+.sec3>p>span{font-size: 25px; color: rgb(45, 149, 247);}
+.but_btn{margin-top: 30px;}
+.but_btn>a {
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    margin: 15px;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 5px;
+    font-weight: 900;
+    transition: all .3s;
+}
+.but_btn>a:hover{background: #000; color: #fff;}
+/*sec3*/
+
+
+@media screen and (max-width: 1500px) {
+    .wrap {
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width: 1300px) {
+    .wrap {
+        width: 85%;
+    }
+    .game_box{display: flex;}
+    .game_box>div{width: 32%;}
+    
+}
+@media screen and (max-width: 1000px) {
+    .wrap {
+        width: 90%;
+    }
+    .game_box>div{width: 49%;}
+}
+@media screen and (max-width: 700px) {
+    .wrap {
+        width: 100%;
+    }
+    .wrap>p{padding:0% 5%;}
+
+}
